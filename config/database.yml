@@ -1,0 +1,30 @@
+# MySQL. Versions 5.1.10 and up are supported.
+#
+# Install the MySQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem 'mysql2'
+#
+# And be sure to use new-style password hashing:
+#   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
+#
+development:
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: codeboxx
+  password: Codeboxx1!
+  port: 3306
+  host: codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com
+  database: 'remi_dupont_lemay'
+
+development_pg:
+  adapter: postgresql
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: codeboxx
+  password: Codeboxx1!
+  port: 5432
+  host: codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com
+  database: 'remi_dupont_lemay'
