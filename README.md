@@ -3,11 +3,11 @@
 LINK TO WEBSITE : http://api.marcantoinetanguay.com/graphiql
 # GRAPHQL
  
-first question :
+###first question :
 
 Récupération de l’adresse de l’immeuble, du début et de la fin de l’intervention pour une intervention spécifique.
 
-# To answer the question
+**To answer the question :**
 
 { intervention(id:1)
   {
@@ -25,11 +25,11 @@ Récupération de l’adresse de l’immeuble, du début et de la fin de l’int
 }
 
 
-second question :
+### second question :
 
 Récupération de l’information du client et de la liste des interventions qui se sont déroulées pour un immeuble spécifique
 
-# To answer the question
+** To answer the question : **
 
 {building (id: 12) {
 interventions {
@@ -47,11 +47,11 @@ customer {
 }
 }}
 
-third question :
+### third question :
 
 Récupération de toutes les interventions effectuées par un employé spécifié avec les immeubles associés à ces interventions incluant les détails (Table BuildingDetails) associés à ces immeubles.
 
-# To answer the question
+**To answer the question**
 
 { user(id: 6) {
     firstName
@@ -75,4 +75,3 @@ Récupération de toutes les interventions effectuées par un employé spécifi�
 
 
 # Rocket_Elevators_GraphQL
-
