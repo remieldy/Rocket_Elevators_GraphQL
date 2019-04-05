@@ -8,19 +8,41 @@ URL LINK : http://api.marcantoinetanguay.com/graphiql
 
 ### To Answer The Query :
 
-- { intervention(id:1)
-{ interventionStart interventionFinish building 
-{ id address{ numberStreet postalCode city } } } }
+{ intervention(id:1)
+  {
+    interventionStart
+    interventionFinish
+    building {
+        id
+        address{
+          numberStreet
+          postalCode
+          city
+    }
+  }
+  }
+}
 
 #### Second Query :
 - Retrieve customer information and the list of interventions that took place for a specific building
 
 ### To Answer The Query : 
 
-- {building (id: 12) { interventions { id }
-customer { id companyName fullNameContactPerson phoneNumberContactPerson user 
-{ firstName lastName } } }}
-
+{building (id: 12) {
+interventions {
+   id
+}
+customer {
+   id
+   companyName
+   fullNameContactPerson
+   phoneNumberContactPerson
+   user {
+     firstName
+     lastName
+   }
+}
+}}
 
 #### Third Query :
 
@@ -28,6 +50,21 @@ customer { id companyName fullNameContactPerson phoneNumberContactPerson user
 
 ### To Answer The Query :
 
-- { user(id: 6) { firstName lastName interventions 
-{ building { id address { numberStreet postalCode city } 
-details { information valeur } } } } }
+{user (id: 6) {
+firstName
+lastName
+interventions {
+   building {
+     id
+     address{
+       numberStreet
+       postalCode
+       city
+     }
+     buildingdetails {
+       information
+       valeur
+     }
+   }
+}
+}}
