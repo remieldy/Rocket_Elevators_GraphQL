@@ -2,7 +2,7 @@
 
 URL LINK : http://api.marcantoinetanguay.com/graphiql
 
-#### First Query :
+#### First Query:
 
 - Recovery of the building, the beginning and the end of the intervention for a specific intervention.
 
