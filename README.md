@@ -51,22 +51,24 @@ customer {
 - Recovery of all interventions by a specified employee with the buildings associated to these interventions including the details (Table BuildingDetails) associated with those buildings. 
 ### To Answer The Query :
 ```javascript
-{user (id: 6) {
-firstName
-lastName
-interventions {
-   building {
-     id
-     address{
-       numberStreet
-       postalCode
-       city
-     }
-     buildingdetails {
-       information
-       valeur
+{
+ user(id: 6) {
+   firstName
+   lastName
+   interventions {
+     building {
+       id
+       address {
+         numberStreet
+         postalCode
+         city
+       }
+       details {
+         information
+         valeur
+       }
      }
    }
+ }
 }
-}}
 ```
