@@ -18,7 +18,7 @@
 
 #### Third Query :
 
-- Recovery of all interventions by a specified employee with the buildings associated to these interventions including the details (Table BuildingDetails) associated with those buildings.
+- Recovery of all interventions by a specified employee with the buildings associated to these interventions including the details (Table BuildingDetails) associated with those buildings. **IMPORTANT** interventions ID are only between 1 and 40
 
 ### To Answer The Query :
 
