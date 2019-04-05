@@ -15,7 +15,9 @@
 
 - {building (id: 12) { interventions { id } customer { id companyName fullNameContactPerson phoneNumberContactPerson user { firstName lastName } } }}
 
+
 #### Third Question :
+
 - Récupération de toutes les interventions effectuées par un employé spécifié avec les immeubles associés à ces interventions incluant les détails (Table BuildingDetails) associés à ces immeubles.
 
 ### To Answer The Question :
