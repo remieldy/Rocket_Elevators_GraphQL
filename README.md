@@ -2,14 +2,14 @@
 
 #### First Question :
 
-- recuperation de l’adresse de l’immeuble, du début et de la fin de l’intervention pour une intervention spécifique.
+- Recovery of the building, the beginning and the end of the intervention for a specific intervention.
 
 ### To Answer The Question :
 
 - { intervention(id:1) { interventionStart interventionFinish building { id address{ numberStreet postalCode city } } } }
 
 #### Second Question :
-- Récupération de l’information du client et de la liste des interventions qui se sont déroulées pour un immeuble spécifique
+- Retrieve customer information and the list of interventions that took place for a specific building
 
 ### To Answer The Question : 
 
@@ -18,7 +18,7 @@
 
 #### Third Question :
 
-- Récupération de toutes les interventions effectuées par un employé spécifié avec les immeubles associés à ces interventions incluant les détails (Table BuildingDetails) associés à ces immeubles.
+- Recovery of all interventions by a specified employee with the buildings associated with these interventions including the details (Table BuildingDetails) associated with those buildings.
 
 ### To Answer The Question :
 
