@@ -1,9 +1,10 @@
 module Types
     class InterventionType < BaseObject
-      field :id, Int, null: false
-      field :user_id, Int, null: false
-      field :building_id, Int, null: false
-      field :intervention_start, String, null: false
-      field :intervention_finish, String, null: false
+      field :id, ID, null: false
+      field :user, UserType, null: false
+      field :building, BuildingType, null: false
+      field :customer, CustomerType, null: false
+      field :intervention_start, String, null: true
+      field :intervention_finish, String, null: true
     end
   end
