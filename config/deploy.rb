@@ -6,7 +6,7 @@ set :rvm_map_bins, [ 'rake', 'gem', 'bundle', 'ruby', 'puma', 'pumactl' ]
 set :application, "remi_dupont_lemay_api"
 set :repo_url, "https://github.com/remieldy/Rocket_Elevators_GraphQL"
 
-require "whenever/capistrano"
+require "capistrano"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
