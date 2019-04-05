@@ -18,6 +18,6 @@
 #### third question :
 - Récupération de toutes les interventions effectuées par un employé spécifié avec les immeubles associés à ces interventions incluant les détails (Table BuildingDetails) associés à ces immeubles.
 
-### To answer the question
+### To answer the question :
 
 - { user(id: 6) { firstName lastName interventions { building { id address { numberStreet postalCode city } details { information valeur } } } } }
