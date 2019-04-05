@@ -7,7 +7,7 @@ URL LINK : http://api.marcantoinetanguay.com/graphiql
 - Recovery of the building, the beginning and the end of the intervention for a specific intervention.
 
 ### To Answer The Query :
-
+```javascript
 { intervention(id:1)
   {
     interventionStart
@@ -22,12 +22,12 @@ URL LINK : http://api.marcantoinetanguay.com/graphiql
   }
   }
 }
-
+```
 #### Second Query :
 - Retrieve customer information and the list of interventions that took place for a specific building
 
 ### To Answer The Query : 
-
+```javascript
 {building (id: 12) {
 interventions {
    id
@@ -43,13 +43,13 @@ customer {
    }
 }
 }}
-
+```
 #### Third Query :
 
 - Recovery of all interventions by a specified employee with the buildings associated to these interventions including the details (Table BuildingDetails) associated with those buildings.
 
 ### To Answer The Query :
-
+```javascript
 {user (id: 6) {
 firstName
 lastName
@@ -68,3 +68,4 @@ interventions {
    }
 }
 }}
+```
