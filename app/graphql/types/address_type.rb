@@ -1,6 +1,6 @@
 module Types
     class AddressType < BaseObject
-      field :id, Int, null: false
+      field :id, ID, null: false
       field :number_street, String, null: false
       field :city, String, null: false
       field :postal_code, String, null: false
