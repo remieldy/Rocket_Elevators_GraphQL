@@ -5,6 +5,8 @@ URL LINK : http://api.marcantoinetanguay.com/graphiql
 #### First Query:
 
 - Recovery of the building, the beginning and the end of the intervention for a specific intervention.
+**IMPORTANT** interventions ID are only between 1 and 40
+
 
 ### To Answer The Query :
 ```javascript
@@ -46,8 +48,7 @@ customer {
 ```
 #### Third Query :
 
-- Recovery of all interventions by a specified employee with the buildings associated to these interventions including the details (Table BuildingDetails) associated with those buildings. **IMPORTANT** interventions ID are only between 1 and 40
-
+- Recovery of all interventions by a specified employee with the buildings associated to these interventions including the details (Table BuildingDetails) associated with those buildings. 
 ### To Answer The Query :
 ```javascript
 {user (id: 6) {
